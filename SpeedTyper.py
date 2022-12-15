@@ -30,6 +30,21 @@ def wpm_test(stdscr):
     target_text = load_text()
     current_text = []
     wpm = 0
+    stdscr.clear()
+    stdscr.addstr(0, 0, target_text)
+    stdscr.addstr(1, 0, "3...")
+    stdscr.refresh()
+    time.sleep(1)
+    stdscr.clear()
+    stdscr.addstr(0, 0, target_text)
+    stdscr.addstr(1, 0, "2...")
+    stdscr.refresh()
+    time.sleep(1)
+    stdscr.clear()
+    stdscr.addstr(0, 0, target_text)
+    stdscr.addstr(1, 0, "1...")
+    stdscr.refresh()
+    time.sleep(1)
     start_time = time.time()
     stdscr.nodelay(True)
 
